@@ -1,44 +1,86 @@
-.header {
-  padding: 20px 0;
-}
-.nav {
+.header .container {
   display: flex;
-  justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  padding-bottom: 25px;
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.9%;
+  color: #173a56;
+  gap: 16px;
+}
+
 .nav-list {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  gap: 30px;
+  margin-left: 237px;
+  padding: 26px 0;
 }
-.nav-link {
-  position: relative;
+
+.nav-list-link {
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.current {
+  font-weight: 600;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
+
+.nav-menu {
+  display: flex;
+  margin-left: auto;
+  gap: 21px;
+}
+
+.nav-menu-btn-in {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  width: 105px;
+  height: 42px;
+  border: 1px solid #bcd0e5;
   border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  width: 105px;
+  height: 42px;
+  background-color: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.nav-menu-btn-up {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  width: 113px;
+  height: 42px;
+  background-color: #02897a;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu-btn-in:hover,
+.nav-menu-btn-in:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #e4e9f3;
+}
+
+.nav-menu-btn-up:hover,
+.nav-menu-btn-up:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    01px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #026e62;
 }
